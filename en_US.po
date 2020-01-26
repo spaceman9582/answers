@@ -1,0 +1,1803 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Answers v1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-19 15:54+0530\n"
+"PO-Revision-Date: 2016-10-19 15:55+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_e\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.8.10\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:73 language.php:34
+#: library/includes/ask_question_frm.php:91
+msgid "Indicates mandatory fields"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:85 library/functions/widgets_functions.php:377
+#: library/functions/widgets_functions.php:504
+#: library/functions/widgets_functions.php:747
+#: library/functions/widgets_functions.php:844
+#: library/includes/ask_question_frm.php:121
+msgid "Title"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:87 library/includes/ask_question_frm.php:123
+msgid "Please Enter Question  Title"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:89 library/includes/ask_question_frm.php:125
+msgid "please enter a descriptive title for your question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:92 library/includes/ask_question_frm.php:132
+msgid "Select Category"
+msgstr ""
+
+#: ask_question_frm.php:101 library/includes/ask_question_frm.php:138
+msgid ""
+"please select at least one category, your question will inserted in to <b>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:105 language.php:65
+#: library/functions/widgets_functions.php:118
+#: library/includes/admin_notification.php:119
+#: library/includes/admin_notification.php:148
+#: library/includes/ask_question_frm.php:143
+msgid "Description"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:130 library/includes/ask_question_frm.php:168
+msgid "Tags"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:132 library/includes/ask_question_frm.php:170
+msgid ""
+"Tags are short keywords, with no space within. Up to five tags can be used. "
+"More than five tags will removed automatically."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:136 library/includes/ask_question_frm.php:174
+msgid "Payable Fees"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:137 library/includes/ask_question_frm.php:175
+#: library/includes/question_preview_buttons.php:5
+msgid "You will be charged "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:137 library/includes/ask_question_frm.php:175
+#: library/includes/question_preview_buttons.php:5
+msgid " at PayPal for this question. "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:147 comments.php:126
+#: library/includes/ask_question_frm.php:195
+msgid "I'm"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:148 comments.php:128
+#: library/includes/ask_question_frm.php:196
+msgid "Existing User"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:155 library/includes/ask_question_frm.php:111
+msgid "Invalid User Login or Password"
+msgstr ""
+
+#: ask_question_frm.php:160 language.php:154
+#: library/includes/ask_question_frm.php:205
+#: library/includes/ask_question_frm.php:229
+msgid "UserName"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:162 ask_question_frm.php:219 comments.php:142
+#: comments.php:194 language.php:31 library/functions/widgets_functions.php:200
+#: library/includes/ask_question_frm.php:209
+#: library/includes/ask_question_frm.php:277 library/includes/reg_frm.php:61
+msgid "Password"
+msgstr ""
+
+#: ask_question_frm.php:180
+msgid "User name"
+msgstr ""
+
+#: ask_question_frm.php:190 library/includes/ask_question_frm.php:239
+msgid "Please Enter your name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:198 comments_blog.php:73 language.php:29
+#: language.php:37 language.php:119 library/includes/ask_question_frm.php:253
+#: library/includes/experts.php:112
+msgid "E-mail"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:208 library/includes/ask_question_frm.php:263
+msgid "Please Enter E-mail"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:212 comments.php:181 comments.php:185
+#: library/includes/ask_question_frm.php:267
+msgid "E-mail already exist or wrong E-mail, please select different one"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:229 comments.php:204
+#: library/includes/ask_question_frm.php:290
+msgid "Please Enter Password"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: ask_question_frm.php:233 comments.php:207
+#: library/includes/ask_question_frm.php:294
+msgid "Password should be minimum of 5 characters"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:19 library/functions/custom_functions.php:1159
+#: library/includes/index_answers.php:33
+#: library/includes/question_preview.php:136
+#: library/includes/questions_detail.php:15
+msgid "Answers"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:26
+msgid "Please select correct answer"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:100
+msgid "Answer Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:116
+msgid "Loged in as - "
+msgstr ""
+
+#: comments.php:121
+msgid "Your Answer"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:131
+msgid "New User? Register Now"
+msgstr ""
+
+#: comments.php:136 library/includes/reg_frm.php:43
+msgid "Username"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:149 comments_blog.php:70 language.php:118
+msgid "Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:159
+msgid "Please Enter Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:167
+msgid "Email"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments.php:177
+msgid "Please Enter Email"
+msgstr ""
+
+#: comments.php:211
+msgid "Please Enter Captcha"
+msgstr ""
+
+#: comments.php:215
+msgid "Captcha was wrong"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments_blog.php:54
+msgid "Leave a Reply"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments_blog.php:66
+msgid "Logged in as "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments_blog.php:70 comments_blog.php:73
+msgid "*"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: comments_blog.php:76 language.php:156
+msgid "Website"
+msgstr ""
+
+#: edit_profile.php:141 edit_profile.php:143 edit_profile.php:185
+#: edit_profile.php:191 edit_profile.php:197 edit_profile.php:203
+msgid "Please enter "
+msgstr ""
+
+#: edit_profile.php:209
+msgid " and "
+msgstr ""
+
+#: functions.php:108
+#, php-format
+msgid "Thank you. %s (<small>%s</small>) theme is now activated."
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:56
+msgid "All done. Your site is ready with sample data now."
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:56
+msgid "Visit your site"
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:57
+msgid "To make further adjustments to your site simply visit the"
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:57
+msgid "homepage"
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:59
+msgid "Wish to delete sample data?"
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:59
+msgid ""
+"Please note that deleting sample data will also remove any content you may "
+"have added or edited on any sample content. Deleting the sample data will "
+"also remove all sample widgets which were inserted."
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:59
+msgid "I understand."
+msgstr ""
+
+#: functions.php:125 library/functions/auto_install/auto_install.php:59
+msgid "Delete sample data"
+msgstr ""
+
+#: functions.php:128 library/functions/auto_install/auto_install.php:79
+#: library/functions/auto_install/auto_install.php:102
+msgid "Your site not looking like our online demo?"
+msgstr ""
+
+#: functions.php:128 library/functions/auto_install/auto_install.php:79
+msgid "Install sample data"
+msgstr ""
+
+#: functions.php:128
+msgid ""
+"So that you don&prime;t start on a blank site, the sample data will help you "
+"get started with the theme. The content includes some default settings, "
+"widgets in their locations, pages, posts and a few dummy listings."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:94 language.php:3 library/functions/widgets_functions.php:154
+msgid "Welcome"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:94 language.php:80 library/functions/widgets_functions.php:172
+msgid "Dashboard"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:94 language.php:10 library/functions/widgets_functions.php:156
+msgid "Logout"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:99
+msgid "Welcome Guest"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:99
+msgid "Sign in"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:102
+msgid "Signup"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: header.php:157
+msgid "Users"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:4
+msgid "Home"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:5 language.php:53 language.php:55
+msgid "Sign In"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:6 language.php:35
+msgid "Sign Up"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:7
+msgid "Guest"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:8
+msgid "Submit Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:9
+msgid "My Dashboard"
+msgstr ""
+
+#: language.php:11
+msgid "Word verification"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:14
+msgid "Category"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:17
+msgid "Featured Questions"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:20
+msgid "Similar Questions"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:24 library/functions/admin_dashboard.php:67
+msgid "Latest Questions"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:25
+msgid "View More Questions"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:28
+msgid "Forgot Password?"
+msgstr ""
+
+#: language.php:30
+msgid "User Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:32
+msgid "Remember me on this computer"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:33
+msgid "Get New Password"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:36
+msgid "Personal Information"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:38
+msgid "First Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:39
+msgid "Last Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:40
+msgid "Address Information"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:41
+msgid "Address1"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:42
+msgid "Address2"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:43
+msgid "City"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:44
+msgid "State"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:45
+msgid "Country"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:46
+msgid "Postal Code"
+msgstr ""
+
+#: language.php:47
+msgid "(Note: A password will be E-mailed to you for future reference.)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:48
+msgid "Your Web Site"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:49
+msgid "Your Twitter URL"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:51
+msgid "Phone Number"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:52
+msgid "Register Now"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:54
+msgid "Register"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:56
+msgid "Invalid Username/Password."
+msgstr ""
+
+#: language.php:57
+msgid "Registration complete. Please check your E-mail for login details."
+msgstr ""
+
+#: language.php:58
+msgid "We just sent you a new password. Kindly check your E-mail now."
+msgstr ""
+
+#: language.php:59
+msgid ""
+"A confirmation link has been sent to you via email. Kindly check your E-mail "
+"now."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:60
+msgid "User registration has been disabled by the admin."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:61
+msgid "You are now logged out."
+msgstr ""
+
+#: language.php:62
+msgid ""
+"Please enter your E-mail address as username. You will receive a new "
+"password via E-mail."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:63
+msgid "Other Information"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:64
+msgid "Twitter URL"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:66
+msgid "Profile picture"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:67
+msgid "Invalid Email, Please check"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:68
+msgid "Check your e-mail for your new password."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:71 language.php:126 library/functions/widgets_functions.php:155
+#: library/includes/edit_profile.php:90
+msgid "Edit Profile"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:72
+msgid "Password Changed successfully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:73
+msgid "Your information updated successfully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:74
+msgid "Change Password"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:75
+msgid "New Password"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:76
+msgid "Confirm New Password"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:77
+msgid "Update"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:81
+msgid "Edit Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:82
+msgid "Renew Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:83
+msgid "Delete Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:84
+msgid "Question Information updated successfully"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:85
+msgid "Question Information deleted successfully"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:88
+msgid "My Account"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:91
+msgid "Select Payment Method"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:94
+msgid "Question submitted successfully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:95
+msgid "Question listing has been renewed successfully"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:99
+msgid "Payment Success"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:100
+msgid "Thanks for listing your question at our site"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:101
+msgid ""
+"<p class=\"sucess_msg\">Your payment has been successfully received and your "
+"question is published.</p><br>"
+msgstr ""
+
+#: language.php:102
+msgid "Thank you for becoming our valued member"
+msgstr ""
+
+#: language.php:103
+msgid ""
+"<p class=\"sucess_msg\">Your payment has been received successfully and the "
+"question you submitted has been published on our site.</p><br /><p><a href="
+"\"[#$submited_question_link#]\" class=\"btn_input_highlight\" >View your "
+"submitted Question &raquo;</a></p><h5>Thank you for becoming our valued "
+"member.</h5>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:106
+msgid "Payment Cancellation"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:107
+msgid ""
+"<p class=\"sucess_msg\">Paypal payment has been cancelled. The question "
+"submitted by you has not been published.</p><br/>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:108
+msgid ""
+"<p><a class=\"btn_input_highlight\" href=\"[#$submited_question_link#]\" "
+">View your submitted Question &raquo;</a></p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:111 language.php:112 library/includes/experts.php:139
+msgid "Ask a Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:113
+msgid "Renew a Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:114
+msgid "Edit a Question"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:117
+msgid "Email Agent"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:120 language.php:129 library/includes/author_detail.php:56
+#: library/includes/experts.php:114
+msgid "Phone"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:121 language.php:143
+#: library/includes/admin_notification_edit.php:193
+msgid "Message"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:122
+msgid "Send Now"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:123
+msgid "<p class=\"sucess_msg\">Message Sent Successfully!</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:127
+msgid "Visit Website"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:128 library/includes/experts.php:105
+#: library/includes/users.php:124
+msgid "Twitter"
+msgstr ""
+
+#: language.php:132
+msgid "You are going to pay"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:133
+msgid "None of payment method is active right now."
+msgstr ""
+
+#: language.php:134
+msgid "You are going to update"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:135
+msgid "Email ID already exists. Please select a different Email."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:136
+msgid "Invalid Coupon Code"
+msgstr ""
+
+#: language.php:139
+msgid "Thank you. Your message has been sent successfully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:140
+msgid "Email address"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:141
+msgid "Your Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:142 library/includes/admin_notification.php:118
+msgid "Subject"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:144
+msgid "Send"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:147
+msgid ""
+"[SUBJECT-STR]Question Inquiry[SUBJECT-END]<p>Dear [#$to_name#],</p><p>Here "
+"is an Inquiry for you related to <b>[#$post_title#]</b></p><p><b>Message : </"
+"b></p><p>[#$frnd_comments#]</p><p>Thank you, [#$your_name#]</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:148
+msgid ""
+"[SUBJECT-STR]Email the post [SUBJECT-END]<p>Dear [#$to_name#],</p><p>your "
+"friend send message for <b>[#$post_title#]</b> </p><p><b>Subject : [#"
+"$frnd_subject#]</b></p><p>[#$frnd_comments#]</p><p>Thank you, [#"
+"$your_name#]</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:149
+msgid ""
+"[SUBJECT-STR]Registration Email[SUBJECT-END]<p>Dear [#$user_name#],</"
+"p><p>You can log in  with the following information:</p><p>Username: [#"
+"$user_login#]</p><p>Password: [#$user_password#]</p><br><p>We hope you "
+"enjoy. Thanks!</p><p>[#$store_name#]</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:153
+msgid "Contact Details"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:155
+msgid "Mobile Number"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:157
+msgid "Upload Photo"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:158
+msgid "Short Biodata Information"
+msgstr ""
+
+#: language.php:159
+msgid ""
+"Note : PNG, GIF of JPEG only, and for better image quality upload image of "
+"size 150x150"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:160
+msgid "Note : Basic HTML tags are allowed"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: language.php:161
+msgid "Coupon Code"
+msgstr ""
+
+#: library/captcha/captcha_function.php:7
+msgid "Verification Code"
+msgstr ""
+
+#: library/captcha/captcha_function.php:9
+msgid "Enter Verification Code"
+msgstr ""
+
+#: library/captcha/captcha_function.php:13
+msgid "Enter the text as you see in the image."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_dashboard.php:31
+msgid "Questions Title"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_dashboard.php:32
+msgid "Date"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_dashboard.php:33
+msgid "Status"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_dashboard.php:56
+msgid "No Questions Available."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_settings.php:123
+msgid "Theme Options"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_settings.php:124
+msgid "Show/Hide All Options"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_settings.php:333
+msgid "Save changes"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/admin_settings.php:339
+msgid "Reset"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:15
+msgid "Add your logo"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:16
+msgid "Change site colors"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:17
+msgid "Manage menu navigation"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:18
+msgid "Manage sidebar widgets "
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:20
+msgid "Add a post"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:21
+msgid "Setup pages"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:30
+#, php-format
+msgid "Thank you. %s (<small>v</small> %s) is now activated."
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:79
+msgid ""
+"So that you don&prime;t start on a blank site, the sample data will help you "
+"get started with the theme. The content includes some default settings, "
+"widgets in their locations, pages, posts and a few dummy posts."
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:127
+msgid "Customize Your Website"
+msgstr ""
+
+#: library/functions/auto_install/auto_install.php:128
+msgid "Next Steps"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/comments_functions.php:101
+msgid "Select as Best answer"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/comments_functions.php:146
+msgid "Report"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/comments_functions.php:159
+msgid "reply"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:287
+msgid "&laquo; First"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:301
+msgid "Last &raquo;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1163
+#: library/includes/question_preview.php:140
+#: library/includes/questions_detail.php:19
+msgid "Asked by"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1164
+#: library/includes/index_answers.php:39
+#: library/includes/question_preview.php:141
+#: library/includes/questions_detail.php:20
+msgid "views"
+msgstr ""
+
+#: library/functions/custom_functions.php:1169
+#: library/includes/index_answers.php:43
+msgid "ed"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1171
+#: library/includes/index_answers.php:45
+msgid "Renew"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1173
+#: library/includes/index_answers.php:47
+msgid "Edit"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1174
+#: library/includes/index_answers.php:48
+msgid "Delete"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1407
+#: library/includes/guest_insertuser.php:22
+#: library/includes/registration.php:172 library/includes/registration.php:181
+msgid "ERROR: Please enter a username."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1409
+#: library/includes/guest_insertuser.php:24
+#: library/includes/registration.php:174 library/includes/registration.php:183
+msgid ""
+"<strong>ERROR</strong>: This username is invalid.  Please enter a valid "
+"username."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1412
+#: library/includes/registration.php:177 library/includes/registration.php:186
+msgid ""
+"<strong>ERROR</strong>: This username is already registered, please choose "
+"another one."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1416
+#: library/includes/guest_insertuser.php:31
+#: library/includes/registration.php:193
+msgid "<strong>ERROR</strong>: Please type your e-mail address."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1418
+#: library/includes/guest_insertuser.php:33
+#: library/includes/registration.php:195
+msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/custom_functions.php:1421
+#: library/includes/registration.php:198
+msgid ""
+"<strong>ERROR</strong>: This email is already registered, please choose "
+"another one."
+msgstr ""
+
+#: library/functions/custom_functions.php:1700
+msgid "Blank Captcha"
+msgstr ""
+
+#: library/functions/custom_functions.php:1715
+msgid "Wrong Captcha"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:67
+msgid "Header Advt image URL & link here or Google Advt code"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:116
+#: library/functions/widgets_functions.php:226
+#: library/functions/widgets_functions.php:632
+msgid "Widget Title"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:173
+#: library/includes/author_detail.php:59 library/includes/author_detail.php:94
+#: library/includes/users.php:84
+msgid "Questions Asked"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:174
+msgid "Answer Provided"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:188
+msgid "Received Votes - "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:256
+msgid "Your Email Address"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:258
+msgid "Subscribe"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:382
+msgid "Categories (<code>IDs</code> separated by commas)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:387
+#: library/functions/widgets_functions.php:510
+msgid "Number of posts"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:426
+msgid "Point"
+msgstr ""
+
+#: library/functions/widgets_functions.php:460
+msgid "Total Answers"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:471
+msgid "None user got any points"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:633
+#: library/functions/widgets_functions.php:635
+#: library/functions/widgets_functions.php:637
+#: library/functions/widgets_functions.php:639
+#: library/functions/widgets_functions.php:641
+msgid "Testimonials"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:634
+#: library/functions/widgets_functions.php:636
+#: library/functions/widgets_functions.php:638
+#: library/functions/widgets_functions.php:640
+#: library/functions/widgets_functions.php:642
+msgid "Author Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:690
+msgid "Advt 1 Image Path (ex.http://pt.com/images/banner.jpg)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/widgets_functions.php:695
+msgid "Advt 1 link"
+msgstr ""
+
+#: library/functions/widgets_functions.php:761
+msgid ""
+"Showcase posts from any post type, including those created by you. Featured "
+"posts are displayed at the top. Works best in the Homepage - Main Content "
+"area."
+msgstr ""
+
+#: library/functions/widgets_functions.php:762
+msgid "T &rarr; Popular Posts"
+msgstr ""
+
+#: library/functions/widgets_functions.php:849
+msgid "Twitter Username"
+msgstr ""
+
+#: library/functions/widgets_functions.php:854
+msgid "Consumer Key"
+msgstr ""
+
+#: library/functions/widgets_functions.php:859
+msgid "Consumer Secret"
+msgstr ""
+
+#: library/functions/widgets_functions.php:864
+msgid "Access Token"
+msgstr ""
+
+#: library/functions/widgets_functions.php:869
+msgid "Access Token Secret"
+msgstr ""
+
+#: library/functions/widgets_functions.php:874
+msgid "Number Of Tweets"
+msgstr ""
+
+#: library/functions/widgets_functions.php:879
+msgid ""
+"Twitter button text <small>(for eg. Follow us, Join me on Twitter, etc.)</"
+"small>"
+msgstr ""
+
+#: library/functions/widgets_functions.php:885
+msgid "Show your latest tweets on your site."
+msgstr ""
+
+#: library/functions/widgets_functions.php:887
+msgid "T &rarr; Latest Twitter Feeds"
+msgstr ""
+
+#: library/functions/widgets_functions.php:927
+msgid "Latest Tweets"
+msgstr ""
+
+#: library/functions/widgets_functions.php:934
+msgid "Follow Us"
+msgstr ""
+
+#: library/functions/widgets_functions.php:961
+msgid "0 seconds"
+msgstr ""
+
+#: library/functions/widgets_functions.php:976 library/includes/return.php:33
+msgid " "
+msgstr ""
+
+#: library/functions/widgets_functions.php:999
+msgid "No public tweets"
+msgstr ""
+
+#: library/functions/widgets_functions.php:1003
+msgid "Unable to get tweets"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/yoast-breadcrumbs.php:61
+msgid "Settings"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/yoast-breadcrumbs.php:69
+msgid "You cannot edit the Yoast Breadcrumbs options."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/functions/yoast-posts.php:23
+msgid "Yoast - Tweaking Websites"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:121
+msgid "Bulk Upload"
+msgstr ""
+
+#: library/includes/admin_bulk_upload.php:122
+msgid "Have a "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:125
+msgid "Uploaded successully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:130
+msgid "Select CSV file"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:136
+#: library/includes/admin_notification_edit.php:203
+#: library/includes/admin_settings.php:136
+msgid "Submit"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:142
+msgid "You can download"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:142
+msgid "sample CSV file"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_bulk_upload.php:152
+msgid "Please select csv file to upload"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification.php:20
+msgid "Manage Notifications"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification.php:21
+msgid ""
+"Different emails and messages are displayed on the site or, being sent to "
+"your user at different times such as, when they post a classified etc. You "
+"may customize the default messages, email messages as per your wish from "
+"here. "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification.php:24
+msgid "updated successfully."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification.php:117
+#: library/includes/admin_notification.php:147
+#: library/includes/admin_notification_edit.php:155
+msgid "File Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification_edit.php:83
+msgid "Manage Notification"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification_edit.php:163
+msgid "File Path"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification_edit.php:179
+msgid "Subject Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification_edit.php:203
+#: library/includes/question_preview_buttons.php:26
+#: library/includes/question_preview_buttons.php:53
+msgid "Cancel"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_notification_edit.php:205
+msgid "Back"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:88
+msgid "General Settings"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:97
+msgid ""
+"Sender (Name that will be shown as email sender when users receive emails "
+"from this site)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:101
+msgid "Email Address (emails to users will be sent via this mail ID)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:105
+msgid "Default Currency (Ex.: USD)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:109
+msgid "Default Currency Symbol (Ex.: $)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:113
+msgid "Allow users to submit question on your site?"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:114
+msgid "Yes"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:114
+msgid "No"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:117
+msgid ""
+"Question Default  Status (when a user posts a question, should it be auto "
+"published on your site?)"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:119
+#: library/includes/question_preview_buttons.php:43
+msgid "Publish"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:120
+msgid "Draft"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:124
+msgid "Payment Settings"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:127
+msgid "Question Post Fees in "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/admin_settings.php:131
+msgid "Paypal Merchant ID (Merchant ID to whom payment will be deposited)"
+msgstr ""
+
+#: library/includes/ask_question_frm.php:119
+msgid "Please enter valid text as you see in captcha."
+msgstr ""
+
+#: library/includes/ask_question_frm.php:244
+msgid "User name should not contain space"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/author_detail.php:55
+msgid "Facebook"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/author_detail.php:71
+msgid "Answers provided"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/author_detail.php:72
+msgid "Received Votes&nbsp;&nbsp;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/author_detail.php:95
+msgid "Answers Provided"
+msgstr ""
+
+#: library/includes/author_detail.php:104
+msgid "<b>Sorry No Answers Provided by "
+msgstr ""
+
+#: library/includes/author_detail.php:107
+msgid "<b>Sorry No Questions Asked by "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment-rating.php:135
+msgid "Votes"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment-rating.php:139
+#: library/includes/comment-rating.php:187
+msgid "Thumb up"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment-rating.php:145
+#: library/includes/comment-rating.php:193
+msgid "Thumb down"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment_add.php:18
+msgid "Sorry, comments are closed for this item."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment_add.php:53
+msgid "Sorry, you must be logged in to post a comment."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment_add.php:60
+msgid "Error: please fill the required fields (name, email)."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment_add.php:62
+msgid "Error: please enter a valid email address."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/comment_add.php:66
+msgid "Error: please type a comment."
+msgstr ""
+
+#: library/includes/edit_profile.php:57
+msgid "<br/>Image not uploaded, There is something wrong."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/edit_profile.php:90
+msgid "Indicates mandatory field"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/edit_profile.php:104 library/includes/reg_frm.php:73
+msgid "Full Name"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/edit_profile.php:118
+msgid "Your Facebook URL"
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:10
+msgid "New Question Added of ID:#"
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:12
+msgid "<p><b>Dear Admin</b></p>"
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:13
+msgid "). </p>"
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:14
+msgid "<p>Question Title : "
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:16
+msgid "<p>Date: "
+msgstr ""
+
+#: library/includes/email_alert_question_add.php:17
+msgid "<p>Thank You.</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:13 library/includes/users.php:21
+msgid "All Users"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:14 library/includes/users.php:22
+msgid "Popular"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:21
+msgid "Experts"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:73
+msgid "Listed"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:74
+msgid "Questions &raquo;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:92
+msgid "  - Votes Received&nbsp;&nbsp;&nbsp;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:102 library/includes/users.php:121
+msgid "Visit User's Website"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/experts.php:117 library/includes/users.php:163
+msgid "View Profile &raquo;"
+msgstr ""
+
+#: library/includes/experts.php:124
+msgid "No User available for this match, name begin with "
+msgstr ""
+
+#: library/includes/guest_insertuser.php:27
+msgid "<strong>ERROR</strong>: "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/home_tab.php:4
+msgid "Recent"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/home_tab.php:5
+msgid "Most Responses"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/home_tab.php:6
+msgid "Unanswered"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/home_tab.php:7
+msgid "Recently Answered"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/index_answers.php:38
+msgid "Answered by"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/paynow.php:137
+msgid "Processing For Paypal, Please wait ..."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/question_preview_buttons.php:24
+msgid ""
+"Are you really sure want to DELETE this property? Deleted property can not "
+"be recovered later"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/question_preview_buttons.php:25
+msgid "Yes, Delete Please!"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/question_preview_buttons.php:38
+msgid "Update Now"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/question_preview_buttons.php:43
+msgid "Pay & Publish"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/question_preview_buttons.php:51
+msgid "&laquo; Go Back & Edit Question"
+msgstr ""
+
+#: library/includes/reg_frm.php:26
+msgid "Please enter correct Verification Code."
+msgstr ""
+
+#: library/includes/reg_frm.php:46
+msgid "Username must be unique and without any spaces."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/reg_frm.php:64
+msgid "(note: password should be minimum of 5 characters long.) "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/reg_frm.php:107
+msgid "Facebook URL"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:87
+msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:92
+msgid ""
+"<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:104
+msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:121
+msgid "Invalid key"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:130
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:131
+#, php-format
+msgid "Password: %s"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:138
+#, php-format
+msgid "[%s] Your new password"
+msgstr ""
+
+#: library/includes/registration.php:189
+msgid "<strong>ERROR</strong>: Full name already exists, Please try another."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:252
+#, php-format
+msgid ""
+"<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a "
+"href=\"mailto:%s\">webmaster</a> !"
+msgstr ""
+
+#: library/includes/registration.php:266
+msgid ""
+"[SUBJECT-STR]Registration Email[SUBJECT-END]<p>Dear [#$user_name#],</p>\n"
+"\t\t<p>Your login information:</p>\n"
+"\t\t<p>Username: [#$user_login#]</p>\n"
+"\t\t<p>Password: [#$user_password#]</p>\n"
+"\t\t<p>You can login from [#$store_login_url#] or the URL is : [#"
+"$store_login_url_link#].</p>\n"
+"\t\t<p>Thank you for becoming our valued member</p>\n"
+"\t\t<p>[#$store_name#]</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:363
+msgid "Sorry, that key does not appear to be valid."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/registration.php:517
+msgid ""
+"<strong>ERROR</strong>: Cookies are blocked or not supported by your "
+"browser. You must <a href='http://www.google.com/cookies.html'>enable "
+"cookies</a> to use WordPress."
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/success.php:16
+msgid ""
+"<p>Thanks. The property has been submitted successfully.</p><p>In order to "
+"publish the property, kindly transfer amount of <u>[#$order_amt#] </u> in "
+"our bank. Our bank account details is mentioned below.</p><p>Bank Name : [#"
+"$bank_name#]</p><p>Account Number : [#$account_number#]</p><br><p>Please "
+"include the following reference : [#$orderId#]</p><p><a href=\"[#"
+"$submited_question_link#]\" >View your submitted Question &raquo;</a></"
+"p><br><p>Thanks for listing your property at [#$store_name#].</p>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/success.php:20
+msgid ""
+"<p class=\"sucess_msg\">Thank you, your question request has been received "
+"successfully.</p> <br /><p><a href=\"[#$submited_question_link#]\"  class="
+"\"btn_input_highlight\" >View your submitted Question &raquo;</a></p>  "
+"<h4>Thanks for listing your question at [#$store_name#].</h4>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/users.php:23
+msgid "Alphabetical"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/users.php:104
+msgid "Answers Provided&nbsp;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/users.php:142
+msgid "<b>"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/users.php:142
+msgid "</b>  - Votes Received&nbsp;&nbsp;"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: library/includes/users.php:160
+msgid "E-mail : "
+msgstr ""
+
+#: library/includes/users.php:173
+msgid "<b>No User available for this match, name begin with "
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: search.php:6
+msgid "Search Result -"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: search.php:6
+#, php-format
+msgid "%s"
+msgstr ""
+
+# @ ptthemes_breadcrumbs
+#: search.php:20
+msgid "No Question Available"
+msgstr ""

@@ -1,0 +1,3 @@
+# No direct access to the database
+Order Deny,Allow
+Deny from all

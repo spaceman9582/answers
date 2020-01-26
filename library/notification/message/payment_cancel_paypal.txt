@@ -1,0 +1,3 @@
+<p class="sucess_msg">Sorry for cancellation of your question</p><br />
+<p><a href="[#$submited_property_link#]" class="btn_input_highlight" >View your submitted Question &raquo;</a></p>
+<h5>Thank you for becoming our valued member.</h5>

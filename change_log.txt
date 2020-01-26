@@ -1,0 +1,182 @@
+Templatic theme - Answers (version : 2.0.5) 10th Mar 2016
+================================================================================================
+
+December 24, 2019
+Message: Fix - hide validation message on page load time
+
+Modified : /Answers/library/includes/registration.php
+
+------------------------------------------------------------------------------------------
+
+July 03, 2019
+Message: Compatible with PHP 7
+
+Modified : /Answers/functions.php
+Modified : /Answers/library/functions/custom_functions.php
+Modified : /Answers/library/functions/widgets_functions.php
+Modified : /Answers/library/functions/yoast-posts.php
+Modified : /Answers/library/includes/comment_rating_todb.php
+Modified : /Answers/library/includes/ipn_process.php
+Modified : /Answers/thumbsup/admin/index.php
+Modified : /Answers/thumbsup/core/thumbsup.php
+Modified : /Answers/thumbsup/core/thumbsup_database.php
+
+------------------------------------------------------------------------------------------
+
+February 25, 2019
+------------------------------------------------------------------------------------------
+Message: Fix - Compatibility with PHP 7.2 changes
+
+Modified : /Answers/library/functions/widgets_functions.php
+
+------------------------------------------------------------------------------------------
+
+November 30, 2018
+------------------------------------------------------------------------------------------
+Message:Added rel="nofollow"
+
+Modified : /Answers/footer.php
+
+------------------------------------------------------------------------------------------
+
+September 29, 2018
+------------------------------------------------------------------------------------------
+Message: Fix - SEO meta information for post Tags entered does not reflect on front-end or in page source
+
+Modified : /Answers/header.php
+
+------------------------------------------------------------------------------------------
+
+22nd December 2017
+------------------------------------------------------------------------------------------
+FIX - User Registration not working.Remove sanitize_user() and sanitize_email().
+------------------------------------------------------------------------------------------
+/Answers/library/functions/add_comments.php
+/Answers/library/functions/custom_functions.php
+/Answers/library/includes/admin_settings.php
+/Answers/library/includes/comment_add.php
+/Answers/library/includes/guest_insertuser.php
+/Answers/library/includes/question_preview.php
+/Answers/library/includes/registration.php
+/Answers/page_contact.php
+
+
+
+11th December 2017(Version 2.0.4)
+------------------------------------------------------------------------------------------
+Fix: Security related changes
+------------------------------------------------------------------------------------------
+/functions.php
+/library/functions/auto_install/auto_install.php
+/library/includes/comment_add.php
+
+------------------------------------------------------------------------------------------
+Updated: Changed http:// with //
+------------------------------------------------------------------------------------------
+All JS, CSS and PHP file.
+
+
+10th November 2017(Version 2.0.3)
+------------------------------------------------------------------------------------------
+Fix - Ask Que button shows 404 in mobile devices
+------------------------------------------------------------------------------------------
+/header.php
+
+------------------------------------------------------------------------------------------
+Fix - Theme guide URL was wrong as redirected to different theme
+------------------------------------------------------------------------------------------
+/library/functions/auto_install/auto_install.php
+
+31st May 2017(Version 2.0.2)
+------------------------------------------------------------------------------------------
+Improved: Code beautified.
+------------------------------------------------------------------------------------------
+All .php files Modified
+
+
+1st April 2017 (Version : 2.0.1)
+----------------------------------------------------------------
+Improvement: PHP 7 related changes done
+----------------------------------------------------------------
+/library/includes/comment-rating.php
+
+----------------------------------------------------------------
+Improvement: Translations strings
+----------------------------------------------------------------
+/comments.php
+/en_US.po
+/language.php
+/library/functions/widgets_functions.php
+
+----------------------------------------------------------------
+Improvement: SEO related changes done in footer script
+----------------------------------------------------------------
+/footer.php
+
+----------------------------------------------------------------
+Fix: New resgiteration form related fields were appearing for logged in users also while answering Question.
+----------------------------------------------------------------
+/comments.php
+
+----------------------------------------------------------------
+Fix: Menu was not appearing properly in mobile view.
+----------------------------------------------------------------
+/library/functions/widgets_functions.php
+/library/js/menu.js
+
+----------------------------------------------------------------
+Fix: Menu realted CSS updated
+----------------------------------------------------------------
+/library/css/menu.css
+
+----------------------------------------------------------------
+Fix: Pagination was not working
+----------------------------------------------------------------
+/library/functions/custom_functions.php
+/library/includes/users.php
+
+----------------------------------------------------------------
+Fix: Added message while paynow page is visited directly.
+----------------------------------------------------------------
+/library/includes/paynow.php
+
+----------------------------------------------------------------
+Fix: Show capthca on ask a question ticket.
+Fix: Answers cannot be submitted when captcha is enabled
+----------------------------------------------------------------
+/library/functions/custom_functions.php
+/library/includes/ask_question_frm.php
+/style.css
+
+
+
+4th May 2016 (Version : 2.0)
+----------------------------------------------------------------
+Improve - Security Updates
+----------------------------------------------------------------
+/ask_question_frm.php
+/change_log.txt
+/edit_profile.php
+/functions.php
+/index.php
+/functions/add_comments.php
+/functions/custom_functions.php
+/includes/admin_notification_edit.php
+/includes/admin_settings.php
+/includes/ask_question_frm.php
+/includes/cancel.php
+/includes/comment_add.php
+/includes/edit_profile.php
+/includes/experts.php
+/includes/guest_insertuser.php
+/includes/ipn_process.php
+/includes/paynow.php
+/includes/paypal_email.php
+/includes/question_preview.php
+/includes/registration.php
+/includes/search.php
+/includes/success.php
+/includes/users.php
+/page.php
+/page_contact.php
+/style.css

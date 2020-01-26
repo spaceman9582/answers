@@ -1,0 +1,6 @@
+[SUBJECT-STR]Payment Success Acknowledgement[SUBJECT-END]
+<p>Dear [#$to_name#],</p>
+<p>[#$transaction_details#]</p>
+<br>
+<p>We hope you enjoy . Thanks!</p>
+<p>[#$store_name#]</p>

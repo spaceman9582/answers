@@ -1,0 +1,105 @@
+/* Global styles */
+html { background:#dae8ec; }
+body { margin:0 auto; width:760px; font:14px/18px Helvetica,Arial,sans-serif; color:#333; }
+
+/* Alignment */
+img, button { vertical-align:middle; }
+
+/* Links */
+a { text-decoration:none; color:#035a76; }
+a:hover { text-decoration:underline; }
+
+/* Headings */
+h2 { margin:24px 0 0; font-size:14px; text-transform:uppercase; }
+
+/* Code */
+code { background:#fff; font-family:Monaco,monospace; font-size:12px; color:#666; }
+
+/* Forms */
+form { margin:0; padding:0; }
+input[type="text"], input[type="password"], textarea { font:inherit; }
+input[type="submit"] { cursor:pointer; }
+
+/* Header */
+#header { position:relative; margin:50px 0 0; height:60px; background:url(../images/header.png) no-repeat 0 0; text-shadow:#023547 1px 1px 1px; }
+#header h1 { position:absolute; top:18px; left:20px; margin:0; width:300px; font-size:24px; text-transform:uppercase; }
+#header h1 a { text-decoration:none; color:#82aebc; }
+#header h1 a:hover { color:#fff; }
+#header p { position:absolute; top:16px; right:20px; margin:0; width:400px; text-align:right; color:#82aebc; }
+#header p strong { margin-right:2px; color:#c0d6dd; }
+#header p a { margin-left:2px; text-decoration:none; color:#cfde4e; }
+#header p a:hover { border-bottom:2px solid #a6c457; }
+
+/* Content */
+#content { padding:19px; background:#fafcfd; border:1px solid #c9dee4; border-width:0 1px 1px;
+	-moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px; -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px; }
+
+/* Footer */
+#footer { padding:20px; font-size:12px; color:#999; }
+#copyright { float:left; width:300px; }
+#back2site { float:right; width:300px; text-align:right; }
+#footer a { color:#6fa3b3; }
+#footer a:hover { color:#035e76; }
+
+/* Error messages */
+.js .alert { display:none; }
+.alert .cancel { display:none; margin-left:0.5em; }
+.js .alert .cancel { display:inline-block; }
+.alert { margin:0 0 20px; background:#a1191f; border:1px solid #7e1015; font-size:16px; text-align:center; color:#fff; text-shadow:#7e1015 1px 1px 1px;
+	-moz-border-radius:10px; -webkit-border-radius:10px; }
+.alert strong { display:block; padding:10px 20px; }
+
+/* Cancel buttons */
+a.cancel { display:inline-block; width:16px; height:16px; background:url(../images/icons-sprite.png) no-repeat -32px 0; border:0; text-indent:-9999px; outline:0; }
+a.cancel:hover { background-position:-48px 0; }
+
+/* Login form */
+.js #login label { display:none; }
+
+/* Table styles */
+table { margin:0 0 1em; width:100%; }
+.column-labels { display:none; }
+th, td { padding:2px; border-bottom:1px solid #c9dee4; text-align:left; vertical-align:middle; }
+td.date, td.count { font-size:12px; color:#666; }
+.right { text-align:right; }
+.center { text-align:center; }
+tbody tr:hover { background:#fff; color:#000; }
+tbody tr:hover .date { color:#333; }
+tbody tr:hover input.rename { background-color:#fff; }
+
+/* Filter */
+tr.filter { background:#dae8ec; }
+tr.filter td { padding:12px 2px 10px; }
+tr.filter .input { padding:2px; width:300px; background:#fff; border:1px inset #ccc; }
+tr.filter .input:focus { background:#fafced; border-color:#666; font-weight:bold; }
+
+/* Pagination */
+tr.pages { background:#dae8ec; }
+tr.pages td { padding:10px 26px; border-bottom:0; font-size:12px; color:#666; }
+tr.pages a { font-weight:bold; }
+
+/* Open/closed locks */
+input.lock { width:16px; height:16px; background:url(../images/icons-sprite.png) no-repeat 0 0; border:0; text-indent:-9999px; }
+input.lock.closed { background-position:-16px 0; }
+input.lock.busy { background:url(../images/spinner.gif) no-repeat 0 0; }
+
+/* Rename input fields */
+.submit_controls a.cancel { display:none; }
+.js .submit_controls a.cancel { display:inline-block; }
+.js .submit_controls { display:none; }
+input.rename { padding:3px; width:300px; background:#fafcfd; border:0; }
+input.rename:hover { background:#e9f0b7; }
+input.rename.editing { padding:2px; background:#fff; border:1px inset #ccc; font-weight:bold; }
+input.rename.editing:focus { background:#fafced; border-color:#666; }
+
+/* Delete icons */
+input.delete { width:16px; height:16px; background:url(../images/icons-sprite.png) no-repeat -64px 0; border:0; text-indent:-9999px; }
+input.delete:hover { background-position:-80px 0; }
+
+/* Help area */
+#show-help { display:none; }
+.js #show-help { display:inline; }
+.js #help { display:none; }
+
+/* Fix for IE <= 7: text-indent does not work to hide text on submit buttons */
+input.lock, input.delete { font-size:0; line-height:999px; }

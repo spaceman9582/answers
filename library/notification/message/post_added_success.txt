@@ -1,0 +1,2 @@
+<p class="sucess_msg">Thank you, your question request has been received successfully.</p> <br />
+<p><a href="[#$submited_question_link#]"  class="btn_input_highlight" >View your submitted Question &raquo;</a></p>  <h4>Thank you for becoming our valued member.</h4>
