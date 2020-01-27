@@ -1,4 +1,5 @@
 <?php
+
 $comment_post_ID = isset( $_POST['comment_post_ID'] ) ? (int) $_POST['comment_post_ID'] : 0;
 
 $post = get_post( $comment_post_ID );
@@ -33,6 +34,9 @@ $comment_author       = ( isset( $_POST['author'] ) )  ? sanitize_text_field( $_
 $comment_author_email = ( isset( $_POST['email'] ) )   ? $_POST['email'] : null;
 $comment_author_url   = ( isset( $_POST['url'] ) )     ? sanitize_text_field( $_POST['url'] ) : null;
 $comment_content      = ( isset( $_POST['comment'] ) ) ? sanitize_text_field( $_POST['comment'] ) : null;
+$comment1             = ( isset( $_POST['comment1'] ) ) ? sanitize_text_field( $_POST['comment1'] ) : null;
+$comment2             = ( isset( $_POST['comment2'] ) ) ? sanitize_text_field( $_POST['comment2'] ) : null;
+
 
 // If the user is logged in
 $user = wp_get_current_user();
@@ -77,6 +81,18 @@ $user  = $current_user;
 $commentdata = compact( 'comment_post_ID', 'comment_author', 'comment_author_email', 'comment_author_url', 'comment_content', 'comment_type', 'comment_parent', 'user_id' );
 
 $comment_id = wp_new_comment( $commentdata );
+
+
+//====01.27 saijiro=============================
+if($comment1 != null){
+    add_comment_meta($comment_id, 'comment1', $comment1);
+}
+
+if($comment2 != null){
+    add_comment_meta($comment_id, 'comment2', $comment2);
+}
+//====01.27 saijiro=============================
+
 
 $comment = get_comment( $comment_id );
 if ( ! $user->ID ) {

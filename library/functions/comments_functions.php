@@ -79,7 +79,7 @@ function custom_comment( $comment, $args, $depth ) {
 					<?php } else { ?>
 					<?php echo $comment->comment_author;?>
 					<?php //comment_author_link()
-}?></strong>  <small>- <?php comment_date( 'M d, Y' ); ?> </small> </span>
+}?></strong>  <small>- <?php comment_date( 'h:m, M d, Y' ); ?> </small> </span>
 
 					
 									  <span class="comments_links">   
@@ -100,7 +100,10 @@ function custom_comment( $comment, $args, $depth ) {
 		<span class="comm-reply">
 			<?php
 			global $current_user,$post,$comment;
-			if ( $current_user->data->ID == $post->post_author || current_user_can( 'edit_post' ) ) {
+//====01.26 saijiro=======================================
+//			if ( $current_user->data->ID == $post->post_author || current_user_can( 'edit_post' ) ) {
+			if ( current_user_can( 'administrator' ) ) {
+//====01.26 saijiro=======================================
 				?>
 				<input type="radio" name="correct_answer" value="<?php echo $comment->comment_ID?>" <?php if ( $comment->correct_ans ) {?> checked="checked"<?php }?> onchange="select_as_best_answers(this.value);" /> 
 			<small>: <?php _e( 'Select as Best answer' );?></small>

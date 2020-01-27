@@ -10,6 +10,8 @@ if ( $_POST ) {
 			$currency = $option_value['currency'];
 			$currencysym = $option_value['currencysym'];
             $answers_num = $option_value['answers_num'];
+            $main_tab_title1 = $option_value['main_tab_title1'];
+            $main_tab_title2 = $option_value['main_tab_title2'];
 			$site_email = $option_value['site_email'];
 			$site_email_name = $option_value['site_email_name'];
 			$approve_status = $option_value['approve_status'];
@@ -21,6 +23,8 @@ if ( $_POST ) {
 	$option_value['currency'] = sanitize_text_field( $_POST['currency'] );
 	$option_value['currencysym'] = sanitize_text_field( $_POST['currencysym'] );
 	$option_value['answers_num'] = sanitize_text_field( $_POST['answers_num'] );
+	$option_value['main_tab_title1'] = sanitize_text_field( $_POST['main_tab_title1'] );
+	$option_value['main_tab_title2'] = sanitize_text_field( $_POST['main_tab_title2'] );
 	$option_value['site_email'] = $_POST['site_email'];
 	$option_value['site_email_name'] = sanitize_text_field( $_POST['site_email_name'] );
 	$option_value['is_user_addquestion'] = sanitize_text_field( $_POST['is_user_addquestion'] );
@@ -38,6 +42,8 @@ if ( count( $cartinfo ) == 0 ) {
 						'currency'		=> 'USD',
 						'currencysym'	=> '$',
 						'answers_num'   => '1',
+						'main_tab_title1'   => 'Recent',
+						'main_tab_title2'   => 'Unanswered',
 						'site_email'	=> get_option( 'admin_email' ),
 						'site_email_name' => get_option( 'blogname' ),
 						'is_user_addquestion'		=> '1',
@@ -61,6 +67,8 @@ if ( $cartinfo ) {
 	$currencysym = stripslashes( $option_value['currencysym'] );
 //=========01.26 saijiro===============
 	$answers_num = stripslashes( $option_value['answers_num'] );
+    $main_tab_title1 = stripslashes( $option_value['main_tab_title1'] );
+    $main_tab_title2 = stripslashes( $option_value['main_tab_title2'] );
 //	===================================
 	$site_email = stripslashes( $option_value['site_email'] );
 	$site_email_name = stripslashes( $option_value['site_email_name'] );
@@ -126,6 +134,15 @@ text-shadow:0 1px 0 #FFFFFF;  }
       <tr>
           <td><?php _e( 'Answers Num' );?></td>
           <td><input type="text" name="answers_num" value="<?php echo $answers_num;?>" /></td>
+      </tr>
+
+      <tr>
+          <td><?php _e( 'Main Tab title' );?></td>
+
+                  <td>
+                      <input type="text" name="main_tab_title1" value="<?php echo $main_tab_title1;?>" />
+                      <input type="text" name="main_tab_title2" value="<?php echo $main_tab_title2;?>" />
+                  </td>
       </tr>
 <!--      //=========01.26 saijiro===============-->
 	<tr><td colspan="2"><h2><?php _e( 'Payment Settings' );?></h2></td></tr>

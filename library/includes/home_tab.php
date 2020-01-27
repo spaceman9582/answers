@@ -1,10 +1,13 @@
 <?php
+$option_value = get_option( 'mysite_general_settings' );
+$main_tab_title1 = stripslashes( $option_value['main_tab_title1'] );
+$main_tab_title2 = stripslashes( $option_value['main_tab_title2'] );
 
 $home_tabble_info = array(
-					'latest'	=> __( 'Recent' ),
-					'popular'	=> __( 'Most Responses' ),
-					'unanswered' => __( 'Unanswered' ),
-					'answers'	=> __( 'Recently Answered' ),
+					'latest'	=> __( $main_tab_title1 ),
+//					'popular'	=> __( 'Most Responses' ),
+					'unanswered' => __( $main_tab_title2 ),
+//					'answers'	=> __( 'Recently Answered' ),
 					);
 ?>
 <ul id="tab" class="clearfix">
