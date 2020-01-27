@@ -9,6 +9,7 @@ if ( $_POST ) {
 			$option_value = unserialize( $cartinfoObj->option_value );
 			$currency = $option_value['currency'];
 			$currencysym = $option_value['currencysym'];
+            $answers_num = $option_value['answers_num'];
 			$site_email = $option_value['site_email'];
 			$site_email_name = $option_value['site_email_name'];
 			$approve_status = $option_value['approve_status'];
@@ -19,6 +20,7 @@ if ( $_POST ) {
 	}
 	$option_value['currency'] = sanitize_text_field( $_POST['currency'] );
 	$option_value['currencysym'] = sanitize_text_field( $_POST['currencysym'] );
+	$option_value['answers_num'] = sanitize_text_field( $_POST['answers_num'] );
 	$option_value['site_email'] = $_POST['site_email'];
 	$option_value['site_email_name'] = sanitize_text_field( $_POST['site_email_name'] );
 	$option_value['is_user_addquestion'] = sanitize_text_field( $_POST['is_user_addquestion'] );
@@ -35,6 +37,7 @@ if ( count( $cartinfo ) == 0 ) {
 	$paymethodinfo = array(
 						'currency'		=> 'USD',
 						'currencysym'	=> '$',
+						'answers_num'   => '1',
 						'site_email'	=> get_option( 'admin_email' ),
 						'site_email_name' => get_option( 'blogname' ),
 						'is_user_addquestion'		=> '1',
@@ -56,6 +59,9 @@ if ( $cartinfo ) {
 	$option_value = get_option( 'mysite_general_settings' );
 	$currency = stripslashes( $option_value['currency'] );
 	$currencysym = stripslashes( $option_value['currencysym'] );
+//=========01.26 saijiro===============
+	$answers_num = stripslashes( $option_value['answers_num'] );
+//	===================================
 	$site_email = stripslashes( $option_value['site_email'] );
 	$site_email_name = stripslashes( $option_value['site_email_name'] );
 	$approve_status = stripslashes( $option_value['approve_status'] );
@@ -116,6 +122,12 @@ text-shadow:0 1px 0 #FFFFFF;  }
 		  </select>
 		</td>
 	  </tr>
+<!--      //=========01.26 saijiro===============-->
+      <tr>
+          <td><?php _e( 'Answers Num' );?></td>
+          <td><input type="text" name="answers_num" value="<?php echo $answers_num;?>" /></td>
+      </tr>
+<!--      //=========01.26 saijiro===============-->
 	<tr><td colspan="2"><h2><?php _e( 'Payment Settings' );?></h2></td></tr>
 	  <tr>
 	  <tr>

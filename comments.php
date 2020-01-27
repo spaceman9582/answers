@@ -116,9 +116,21 @@ if ( post_password_required() ) { ?>
 				<?php echo $user_identity; ?>
 				<?php /*?>. <a href="<?php echo get_option('siteurl'); ?>/?ptype=login&action=logout" title="Log out of this account"><?php _e('Logout &raquo;');?></a></p><?php */?>
 				<?php }?>
+
+
+<!--01.26 saijiro------------------------------------------------------------------------->
 				 <p class="clearfix">
-				 <label > <?php _e( 'Your Answer' )?></label>
-				 <textarea name="comment" id="comment" rows="10" cols="10" tabindex="4" class="textarea" required></textarea></p>
+				 <label > <?php _e( 'Your Answer1' )?></label>
+				 <textarea name="comment" id="comment1" rows="3" cols="10" tabindex="4" class="textarea" required></textarea></p>
+                <p class="clearfix">
+                <label > <?php _e( 'Your Answer2' )?></label>
+                <textarea name="comment" id="comment2" rows="3" cols="10" tabindex="4" class="textarea" required></textarea></p>
+                <p class="clearfix">
+                <label > <?php _e( 'Your Answer3' )?></label>
+                <textarea name="comment" id="comment3" rows="3" cols="10" tabindex="4" class="textarea" required></textarea></p>
+
+<!--01.26 saijiro------------------------------------------------------------------------->
+
 
 			<?php if ( ! $user_ID ) : ?>
 			  <p class="clearfix">
