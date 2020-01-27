@@ -126,7 +126,7 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			<?php }?>
 
 			   <div class="ask_row">
-			<label> <?php _e( 'Description' );?> : </label>
+			<label> <?php _e( 'Image' );?> : </label>
                    <input type="file" name="my_file_upload[]" multiple="multiple" accept="image/*">
 			<?php
 //                        $name = 'post_desc';
@@ -150,8 +150,6 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			?>
 		
 		 </div>
-
-		 
 				  <div class="ask_row">
 			<label> <?php _e( 'Tags' );?> : </label>
 		   <input name="post_tags" id="post_tags" type="text" class="textfield textfield_tags" value="<?php echo $post_tags;?>" />
