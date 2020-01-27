@@ -11,7 +11,8 @@ if ( $_POST ) {
 		$custom = array();
 
 		$post_title = $property_info['post_title'];
-		$post_desc = $property_info['post_desc'];
+		$post_desc = "";
+//		$post_desc = $property_info['post_desc'];
 		$queston_cat = $property_info['queston_cat'];
 		$post_tags = str_replace( ' ',',',$property_info['post_tags'] );
 		$payable_amount = $property_info['payable_amount'];
@@ -61,9 +62,20 @@ if ( $_POST ) {
 			$last_postid = wp_insert_post( $my_post ); //Insert the post into the database
 			include( TEMPLATEPATH . '/library/includes/email_alert_question_add.php' );  // email notification to admin
 		}
-		foreach ( $custom as $key => $val ) {
-			update_post_meta( $last_postid, $key, $val );
-		}
+
+
+
+
+//============01.26 saijiro ================================================================
+        $files = $_SESSION['upload_arr_id'];
+		$i = 0;
+        foreach ($files as $file => $attach_id) {
+            $image_upload_meta_key = 'image_upload1'.$i;
+            update_post_meta( $last_postid, $image_upload_meta_key, $attach_id );
+            $i++;
+        }
+
+//==============================================================================================
 
 		$_SESSION['question_info'] = array();
 		if ( $_REQUEST['qid'] && $property_info['renew'] == '' ) {

@@ -1,28 +1,41 @@
 <?php
 global $current_user;
-global $sss;
 if ( $_POST ) {
-    $sss = "333";
+    //============01.26 saijiro ================================================================
+    $_SESSION['upload_arr_id'] = array();
     if ( $_FILES ) {
 
         $files = $_FILES["my_file_upload"];
 
-        foreach ($files['name'] as $key => $value) {
-            if ($files['name'][$key]) {
-                $file = array(
-                    'name' => $files['name'][$key],
-                    'type' => $files['type'][$key],
-                    'tmp_name' => $files['tmp_name'][$key],
-                    'error' => $files['error'][$key],
-                    'size' => $files['size'][$key]
-                );
-                $_FILES = array ("my_file_upload" => $file);
-//                foreach ($_FILES as $file => $array) {
-//                    $newupload = my_handle_attachment($file,$pid);
-//                }
-            }
+        $upload_arr_id = array();
+
+       foreach ($files['name'] as $key => $value) {
+				if ($files['name'][$key]) {
+					$file = array(
+						'name' => $files['name'][$key],
+	 					'type' => $files['type'][$key],
+						'tmp_name' => $files['tmp_name'][$key],
+						'error' => $files['error'][$key],
+ 						'size' => $files['size'][$key]
+					);
+					$_FILES = array ("kv_multiple_attachments" => $file);
+					foreach ($_FILES as $file => $array) {
+
+                        require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+                        require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+                        require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+                        $attach_id = media_handle_upload( $file, 1 );
+                        array_push($upload_arr_id, $attach_id);
+//                        if ( is_numeric( $attach_id ) ) {
+//                            update_post_meta( 100, '_my_file_upload', $attach_id );
+//                        }
+
+					}
+				}
         }
+        $_SESSION['upload_arr_id'] = $upload_arr_id;
     }
+//===============================================================================================
 
 	$_SESSION['question_info'] = $_POST;
 	//$post_desc = $_SESSION['question_info']['post_content'];

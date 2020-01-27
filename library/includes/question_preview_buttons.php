@@ -1,3 +1,4 @@
+<script type='text/javascript' src='<?php bloginfo( 'template_directory' ); ?>/library/js/jquery.simplemodal.js'></script>
 <?php
 if ( $_POST['payable_amount'] > 0 ) {
 	?>
@@ -14,9 +15,11 @@ if ( $_REQUEST['alook'] ) {
 $form_action_url = get_ssl_normal_url( get_option( 'siteurl' ) . '/?ptype=paynow' );
 ?>
 <form method="post" action="<?php echo $form_action_url; ?>" name="paynow_frm" id="paynow_frm" >
+
 	<?php
 	if ( $_REQUEST['delete'] ) {
 	?>
+
 		<h5 class="payment_head"><?php _e( 'Are you really sure want to DELETE this property? Deleted property can not be recovered later' );?></h5>
 		<input type="button" name="Delete" value="<?php _e( 'Yes, Delete Please!' );?>" class="btn_input_highlight btn_spacer fr" onclick="window.location.href='<?php echo get_option( 'siteurl' );?>/?ptype=delete&qid=<?php echo $_REQUEST['qid']?>'" />
 		<input type="button" name="Cancel" value="<?php _e( 'Cancel' );?>" class="btn_input_normal fl" onclick="window.location.href='<?php echo get_author_posts_url( $current_user->data->ID );?>'" />
@@ -51,5 +54,14 @@ $form_action_url = get_ssl_normal_url( get_option( 'siteurl' ) . '/?ptype=paynow
 ?>  
 	 </form>
 	 </div>
+
+
+    <script>
+
+       jQuery("#paynow_frm").submit(function (e) {
+
+       });
+
+    </script>
 <?php }// End if().
 ?>

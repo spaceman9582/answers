@@ -127,7 +127,7 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 
 			   <div class="ask_row">
 			<label> <?php _e( 'Description' );?> : </label>
-                   <input type="file" name="my_file_upload[]" id="my_file_upload[]" multiple="multiple">
+                   <input type="file" name="my_file_upload[]" multiple="multiple" accept="image/*">
 			<?php
 //                        $name = 'post_desc';
 //						$settings = array(
