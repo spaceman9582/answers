@@ -1057,7 +1057,26 @@ function get_question_info_li( $post ) {
 	<a href="<?php the_permalink(); ?>#commentarea"><?php comments_number( '0', '1', '%' ); ?> </a>   <?php _e( 'Answers' );?> 
 	</span>
 
-		<h3> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+<!--     01.27 saijiro================================================================-->
+
+     <?php
+        $img_title = '';
+//     var_dump(get_the_ID());
+        $meta_arr = get_post_meta(get_the_ID(), '', true);
+        foreach ($meta_arr as $key => $val){
+
+            $img_title = get_post_meta( $val[0], '_wp_attached_file');
+            break;
+        }
+//        var_dump($img_title);
+     ?>
+     <span class="image_avatar" style="float: left;margin-right: 20px;">
+        <img src="<?php echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?>" alt="image" height="60" width="65" >
+	</span>
+
+<!--     01.27 saijiro================================================================-->
+
+     <h3> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 	<p> <span class="user"><?php _e( 'Asked by' );?>: <strong><?php the_author_posts_link(); ?></strong> </span> 
 	<span class="views"><b><?php echo user_post_visit_count( $post->ID );?> </b> <?php _e( 'views' );?> </span> 
 	<?php the_tags( '<span class="ptags">', ', ', '<br /> </span>' ); ?> 

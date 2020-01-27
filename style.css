@@ -187,10 +187,11 @@ border-bottom:1px solid #e5e5e5; }
 #content .question_list p { float:left; max-width:86%; width: 100%; font-size:14px; border-bottom:none; }
 #content .question_list p span { float:left; margin-right:20px; }
 
-#content .answers_total { float:left; width:65px; height:65px; font-size:14px; text-align:center; 
+#content .answers_total { float:left; width:65px; height:65px; font-size:14px; text-align:center;
 line-height:normal; color:#fff; margin-right:25px; }
 #content .answers_total a { display:block; text-align:center; font-size:25px; font-weight:bold; padding-top:8px; color:#fff; }
 #content .answers_total a:hover {}
+#content .question_list .image_avatar  { float:left; margin-left: 10px}
 
 
 #content .question-desc { width: 87%; float:right;  }
@@ -199,6 +200,7 @@ line-height:normal; color:#fff; margin-right:25px; }
 #content .posts .question_list p {  padding:0 0 15px 0; margin-bottom:30px; width:87%; float:right; 
 border-bottom:1px solid #e5e5e5;  }
 #content .posts .question_list .answers_total { float:left; margin:0; }
+
 #content .posts .question_list  h1 { width:87%; font-size:32px; font-weight:bold; float:right; display:block; margin:0 0 10px; }
 
 #content .question_list p span.user::before, #content .question_list p span.views::before,
