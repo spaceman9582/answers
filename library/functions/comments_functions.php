@@ -52,15 +52,35 @@ function custom_comment( $comment, $args, $depth ) {
 						</div>
 
 						</div><?php */?>
-			
-			 
-				
-			
-					
+
 				
 				<div class="content_left">
 
-									<?php comment_text() ?>
+									<?php
+                                    echo "<span style='display: flex;align-items: baseline;'>Your Answer:";
+                                        comment_text();
+                                        echo "</span>";
+
+
+                                        $comment_other1 = get_comment_meta(get_comment_ID(), 'comment1', true);
+
+                                        $comment_other2 = get_comment_meta(get_comment_ID(), 'comment2', true);
+
+                                        if($comment_other1 != null){
+                                            echo "<span style='display: flex;align-items: baseline;'>Answer1:";
+                                            echo "<p>$comment_other1</p>";
+                                            echo "</span>";
+                                        }
+
+                                        if($comment_other2 != null){
+                                            echo "<span style='display: flex;align-items: baseline;'>Answer2:";
+                                            echo "<p>$comment_other2</p>";
+                                            echo "</span>";
+                                        }
+
+
+
+                                    ?>
 					
 
 										 <p class="author">
@@ -79,23 +99,26 @@ function custom_comment( $comment, $args, $depth ) {
 					<?php } else { ?>
 					<?php echo $comment->comment_author;?>
 					<?php //comment_author_link()
-}?></strong>  <small>- <?php comment_date( 'h:m, M d, Y' ); ?> </small> </span>
+}?></strong>  <small>- <?php comment_date( 'H:m, M d, Y' ); ?> </small> </span>
 
 					
-									  <span class="comments_links">   
-						<?php edit_comment_link( 'edit', '', '' ); ?> |
-					<?php comment_reply_link( array_merge( $args, array(
-						'depth' => $depth,
-						'max_depth' => $args['max_depth'],
-					) ) ); ?>
-						<?php delete_comment_link( get_comment_ID() ); ?> 
+									  <span class="comments_links">
+						<?php edit_comment_link( 'edit', '', '' );  ?>
+					<?php
+
+                    if ( current_user_can( 'administrator' ) ) {
+                        echo '|';
+                        comment_reply_link(array_merge($args, array(
+                            'depth' => $depth,
+                            'reply_text' => __( 'reply' ),
+                            'max_depth' => $args['max_depth'],
+                        )));
+                    }
+                    ?>
+						<?php delete_comment_link( get_comment_ID() ); ?>
 				  </span>
 				  </p>
-
-								
-					
 			</div>
-		
 
 		<span class="comm-reply">
 			<?php
@@ -114,11 +137,6 @@ function custom_comment( $comment, $args, $depth ) {
 
 			   </span>
 
-	   
-	   
-		
-	 
-		 
 <?php }
 
 
@@ -164,16 +182,16 @@ function custom_comment_blog( $comment, $args, $depth ) {
 		
 
 		<span class="comm-reply spacer_com">
-		 
+
 		<?php comment_reply_link( array_merge( $args, array(
 			'add_below' => 'div-comment',
 			'reply_text' => __( 'reply' ),
 			'depth' => $depth,
 			'max_depth' => $args['max_depth'],
 		) ) ) ?>
-		
+
 		<?php edit_comment_link( 'edit', ' | ', '' ); ?>
-		
+
 		<?php delete_comment_link( get_comment_ID() ); ?>
 
 			   </span>
