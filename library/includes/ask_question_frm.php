@@ -128,6 +128,17 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			   <div class="ask_row">
 			<label> <?php _e( 'Image' );?> : </label>
                    <input type="file" name="my_file_upload[]" multiple="multiple" accept="image/*">
+                   <script>
+                       jQuery(function(){
+                           jQuery("input[type = 'submit']").click(function(){
+                               var $fileUpload = jQuery("input[type='file']");
+                               if (parseInt($fileUpload.get(0).files.length) > 4){
+                                   alert("You are only allowed to upload a maximum of 3 files");
+                                   return false;
+                               }
+                           });
+                       });
+                   </script>
 			<?php
 //                        $name = 'post_desc';
 //						$settings = array(
@@ -150,11 +161,11 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			?>
 		
 		 </div>
-				  <div class="ask_row">
-			<label> <?php _e( 'Tags' );?> : </label>
-		   <input name="post_tags" id="post_tags" type="text" class="textfield textfield_tags" value="<?php echo $post_tags;?>" />
-		  <span class="notice">  <?php _e( 'Tags are short keywords, with no space within. Up to five tags can be used. More than five tags will removed automatically.' );?> </span>
-		 </div>
+<!--				  <div class="ask_row">-->
+<!--			<label> --><?php //_e( 'Tags' );?><!-- : </label>-->
+<!--		   <input name="post_tags" id="post_tags" type="text" class="textfield textfield_tags" value="--><?php //echo $post_tags;?><!--" />-->
+<!--		  <span class="notice">  --><?php //_e( 'Tags are short keywords, with no space within. Up to five tags can be used. More than five tags will removed automatically.' );?><!-- </span>-->
+<!--		 </div>-->
 		<?php if ( get_question_fees() > 0 ) {?>
 		 <div class="ask_row">
 			<label> <?php _e( 'Payable Fees' );

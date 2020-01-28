@@ -1009,6 +1009,17 @@ function custom_list_authors( $args = '', $params = array() ) {
 			}
 			$sql .= ' ORDER BY display_name ' . $limit;
 		}
+
+//		01.27 saijiro===========================================================
+
+        if ( $params['sort'] == 'user' ) {
+
+            $sql = "select t.*, wuser.* from (select sum(correct_ans) as sum_num,  c.*  from $wpdb->comments as c where c.comment_approved = '1' GROUP BY c.user_id) as t LEFT JOIN $wpdb->users as wuser on t.user_id = wuser.ID where t.sum_num > 0 and wuser.ID !=0 ORDER BY t.sum_num DESC";
+            $sql .= $limit;
+        }
+
+
+//		01.27 saijiro===========================================================
 	} else {
 		if ( $params['sort'] == 'popular' ) {
 			$sql = "select u.ID,count(p.ID) as post_count from $wpdb->users u left join $wpdb->posts p on p.post_author=u.ID where u.user_login <> 'admin' and p.post_status='publish' group by u.ID ";
@@ -1077,7 +1088,7 @@ function get_question_info_li( $post ) {
 <!--     01.27 saijiro================================================================-->
 
      <h3> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-	<p> <span class="user"><?php _e( 'Asked by' );?>: <strong><?php the_author_posts_link(); ?></strong> </span> 
+	<p> <span class="user"><?php _e( 'Asked by' );?>: <strong><?php the_author_posts_link(); ?></strong> </span>
 	<span class="views"><b><?php echo user_post_visit_count( $post->ID );?> </b> <?php _e( 'views' );?> </span> 
 	<?php the_tags( '<span class="ptags">', ', ', '<br /> </span>' ); ?> 
 	<span class="pcate">  <?php the_category( ', ' ); ?> </span>
