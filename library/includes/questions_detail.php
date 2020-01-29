@@ -23,21 +23,19 @@ if ( $_SERVER['HTTP_REFERER'] == '' || ! strstr( $_SERVER['HTTP_REFERER'],$_SERV
 	   </div> <!-- question #end -->
 <!--01.28 saijiro	   =============================================-->
 		<div class="question-desc">
-<!--      restore=====================================================================================================================================-->
-<!--            --><?php
-//                $meta_arr = get_post_meta(get_the_ID(), '', true);
-//                foreach ($meta_arr as $key => $val){
-//                    $img_title = get_post_meta( $val[0], '_wp_attached_file');
-//                    if($img_title != null){
-//
-//            ?>
-<!--                <img src="--><?php //echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?><!--"  height="120" width="120">-->
-<!--            --><?php
-//                    }
-//                }
+            <?php
+                $meta_arr = get_post_meta(get_the_ID(), '', true);
+                foreach ($meta_arr as $key => $val){
+                    $img_title = get_post_meta( $val[0], '_wp_attached_file');
+                    if($img_title != null){
+
+            ?>
+                <img src="<?php echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?>"  height="120" width="120">
+            <?php
+                    }
+                }
 //            ?>
 
-<!--       restore=====================================================================================================================================-->
 <!--01.28 saijiro	   =============================================-->
 		<?php
 //            the_content();

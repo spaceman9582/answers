@@ -9,9 +9,18 @@ if ( $_POST ) {
 			$option_value = unserialize( $cartinfoObj->option_value );
 			$currency = $option_value['currency'];
 			$currencysym = $option_value['currencysym'];
+            $site_rule1 = $option_value['site_rule1'];
+            $site_rule2 = $option_value['site_rule2'];
+            $upload_image_num = $option_value['upload_image_num'];
             $answers_num = $option_value['answers_num'];
+            $answers_title = $option_value['answers_title'];
+            $answers_title1 = $option_value['answers_title1'];
+            $answers_title2 = $option_value['answers_title2'];
             $main_tab_title1 = $option_value['main_tab_title1'];
             $main_tab_title2 = $option_value['main_tab_title2'];
+            $main_tab_title3 = $option_value['main_tab_title3'];
+            $main_tab_title4 = $option_value['main_tab_title4'];
+            $show_image_num = $option_value['show_image_num'];
 			$site_email = $option_value['site_email'];
 			$site_email_name = $option_value['site_email_name'];
 			$approve_status = $option_value['approve_status'];
@@ -22,9 +31,18 @@ if ( $_POST ) {
 	}
 	$option_value['currency'] = sanitize_text_field( $_POST['currency'] );
 	$option_value['currencysym'] = sanitize_text_field( $_POST['currencysym'] );
+	$option_value['site_rule1'] = sanitize_text_field( $_POST['site_rule1'] );
+	$option_value['site_rule2'] = sanitize_text_field( $_POST['site_rule2'] );
+	$option_value['upload_image_num'] = sanitize_text_field( $_POST['upload_image_num'] );
 	$option_value['answers_num'] = sanitize_text_field( $_POST['answers_num'] );
+	$option_value['answers_title'] = sanitize_text_field( $_POST['answers_title'] );
+	$option_value['answers_title1'] = sanitize_text_field( $_POST['answers_title1'] );
+	$option_value['answers_title2'] = sanitize_text_field( $_POST['answers_title2'] );
 	$option_value['main_tab_title1'] = sanitize_text_field( $_POST['main_tab_title1'] );
 	$option_value['main_tab_title2'] = sanitize_text_field( $_POST['main_tab_title2'] );
+	$option_value['main_tab_title3'] = sanitize_text_field( $_POST['main_tab_title3'] );
+	$option_value['main_tab_title4'] = sanitize_text_field( $_POST['main_tab_title4'] );
+	$option_value['show_image_num'] = sanitize_text_field( $_POST['show_image_num'] );
 	$option_value['site_email'] = $_POST['site_email'];
 	$option_value['site_email_name'] = sanitize_text_field( $_POST['site_email_name'] );
 	$option_value['is_user_addquestion'] = sanitize_text_field( $_POST['is_user_addquestion'] );
@@ -41,9 +59,18 @@ if ( count( $cartinfo ) == 0 ) {
 	$paymethodinfo = array(
 						'currency'		=> 'USD',
 						'currencysym'	=> '$',
+						'site_rule1'   => '::',
+						'site_rule2'   => '::',
+						'upload_image_num'   => '1',
 						'answers_num'   => '1',
+						'answers_title'   => '1',
+						'answers_title1'   => '1',
+						'answers_title2'   => '1',
 						'main_tab_title1'   => 'Recent',
 						'main_tab_title2'   => 'Unanswered',
+						'main_tab_title3'   => 'answered',
+						'main_tab_title4'   => 'Users',
+						'show_image_num'   => 'show_image_num',
 						'site_email'	=> get_option( 'admin_email' ),
 						'site_email_name' => get_option( 'blogname' ),
 						'is_user_addquestion'		=> '1',
@@ -66,9 +93,19 @@ if ( $cartinfo ) {
 	$currency = stripslashes( $option_value['currency'] );
 	$currencysym = stripslashes( $option_value['currencysym'] );
 //=========01.26 saijiro===============
+    $site_rule1 = stripslashes( $option_value['site_rule1'] );
+    $site_rule2 = stripslashes( $option_value['site_rule2'] );
+    $upload_image_num = stripslashes( $option_value['upload_image_num'] );
 	$answers_num = stripslashes( $option_value['answers_num'] );
+	if($answers_num == ''|| $answers_title == null){$answers_title = 1;}
+    $answers_title = stripslashes( $option_value['answers_title'] );
+    $answers_title1 = stripslashes( $option_value['answers_title1'] );
+    $answers_title2 = stripslashes( $option_value['answers_title2'] );
     $main_tab_title1 = stripslashes( $option_value['main_tab_title1'] );
     $main_tab_title2 = stripslashes( $option_value['main_tab_title2'] );
+    $main_tab_title3 = stripslashes( $option_value['main_tab_title3'] );
+    $main_tab_title4 = stripslashes( $option_value['main_tab_title4'] );
+    $show_image_num = stripslashes( $option_value['show_image_num'] );
 //	===================================
 	$site_email = stripslashes( $option_value['site_email'] );
 	$site_email_name = stripslashes( $option_value['site_email_name'] );
@@ -132,8 +169,32 @@ text-shadow:0 1px 0 #FFFFFF;  }
 	  </tr>
 <!--      //=========01.26 saijiro===============-->
       <tr>
+          <td><?php _e( 'Site Rule1:' );?></td>
+          <td><input type="text" name="site_rule1" value="<?php echo $site_rule1;?>" style="width: 500px"/></td>
+      </tr>
+
+      <tr>
+          <td><?php _e( 'Site Rule2' );?></td>
+          <td><input type="text" name="site_rule2" value="<?php echo $site_rule2;?>" style="width: 500px"/></td>
+      </tr>
+
+      <tr>
+          <td><?php _e( 'upload Image Number' );?></td>
+          <td><input type="text" name="upload_image_num" value="<?php echo $upload_image_num;?>" /></td>
+      </tr>
+
+      <tr>
           <td><?php _e( 'Answers Num' );?></td>
-          <td><input type="text" name="answers_num" value="<?php echo $answers_num;?>" /></td>
+          <td><input type="text" name="answers_num" value="<?php echo $answers_num;?>"/></td>
+      </tr>
+
+      <tr>
+          <td><?php _e( 'Answers Title' );?></td>
+          <td>
+              <input type="text" name="answers_title" value="<?php echo $answers_title;?>" />
+              <input type="text" name="answers_title1" value="<?php echo $answers_title1;?>" />
+              <input type="text" name="answers_title2" value="<?php echo $answers_title2;?>" />
+          </td>
       </tr>
 
       <tr>
@@ -142,7 +203,16 @@ text-shadow:0 1px 0 #FFFFFF;  }
                   <td>
                       <input type="text" name="main_tab_title1" value="<?php echo $main_tab_title1;?>" />
                       <input type="text" name="main_tab_title2" value="<?php echo $main_tab_title2;?>" />
+                      <input type="text" name="main_tab_title3" value="<?php echo $main_tab_title3;?>" />
+                      <input type="text" name="main_tab_title4" value="<?php echo $main_tab_title4;?>" />
                   </td>
+      </tr>
+      <tr>
+          <td><?php _e( 'Show image number' );?></td>
+
+          <td>
+              <input type="text" name="show_image_num" value="<?php echo $show_image_num;?>" />
+          </td>
       </tr>
 <!--      //=========01.26 saijiro===============-->
 	<tr><td colspan="2"><h2><?php _e( 'Payment Settings' );?></h2></td></tr>

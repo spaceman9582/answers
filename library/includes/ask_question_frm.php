@@ -125,42 +125,91 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			</div>
 			<?php }?>
 
+            <?php
+            $option_value = get_option( 'mysite_general_settings' );
+            $site_rule1 = stripslashes( $option_value['site_rule1'] );
+            $site_rule2 = stripslashes( $option_value['site_rule2'] );
+            $upload_image_num =  $option_value['upload_image_num'] ;
+            if($upload_image_num == ''){
+                $upload_image_num = 1;
+            }
+            ?>
 			   <div class="ask_row">
+                   <input type="hidden" id="upload_num" value="<?php echo $upload_image_num ?>">
 			<label> <?php _e( 'Image' );?> : </label>
                    <input type="file" name="my_file_upload[]" multiple="multiple" accept="image/*">
-                   <script>
-                       jQuery(function(){
-                           jQuery("input[type = 'submit']").click(function(){
-                               var $fileUpload = jQuery("input[type='file']");
-                               if (parseInt($fileUpload.get(0).files.length) > 4){
-                                   alert("You are only allowed to upload a maximum of 3 files");
-                                   return false;
-                               }
-                           });
-                       });
-                   </script>
-			<?php
-//                        $name = 'post_desc';
-//						$settings = array(
-//						'wpautop' => false, // use wpautop?
-//						'media_buttons' => false, // show insert/upload button(s)
-//						'textarea_name' => $name, // set the textarea name to something different, square brackets [] can be used here
-//						'textarea_rows' => '10', // rows="..."
-//						'tabindex' => '',
-//						'editor_css' => '<style>.wp-editor-wrap{width:88%;margin-left:0px; border:1px solid #e5e5e5;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-//						'editor_class' => '', // add extra class(es) to the editor textarea
-//						'teeny' => false, // output the minimal editor config used in Press This
-//						'dfw' => false, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-//						'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-//						'quicktags' => true,// load Quicktags, can be used to pass settings directly to Quicktags using an array()
-//						);
-//						if ( isset( $post_content ) && $post_content != '' ) {  $post_content = $post_content;
-//						} else { $post_content = $post_content; }
-//						wp_editor( $post_content, $name, $settings );
-//            MIU_GET_IMAGES();
-			?>
+
+
 		
 		 </div>
+            <input type="hidden" id="all_rule_count" value="0">
+            <input type="hidden" id="rule_count" value="0">
+            <?php if($site_rule1 != ''){?>
+            <div>
+                <input type="checkbox" id="site_rule1" name="site_rule1">
+                <span><?php echo $site_rule1; ?></span>
+                <span style="color: red;" id="color111" >*</span>
+
+            </div>
+                <script>
+                    jQuery(function(){
+                        var count = parseInt(jQuery("#all_rule_count").val()) + 1;
+                        jQuery("#all_rule_count").val(count);
+
+                            jQuery("#site_rule1").change(function(){
+
+                                if(this.checked){
+                                    var count = parseInt(jQuery("#rule_count").val()) + 1;
+                                    jQuery("#rule_count").val(count);
+                                }
+                            });
+                    });
+                </script>
+            <?php }?>
+            <?php if($site_rule2 != ''){?>
+                <div>
+                    <input type="checkbox" id="site_rule2" name="site_rule2">
+                    <span><?php echo $site_rule2; ?></span>
+                    <span style="color: red;" >*</span>
+
+                </div>
+                <script>
+                    jQuery(function(){
+                        var count = parseInt(jQuery("#all_rule_count").val()) + 1;
+                        jQuery("#all_rule_count").val(count);
+                        jQuery("#site_rule2").change(function(){
+
+                            if(this.checked){
+                                var count = parseInt(jQuery("#rule_count").val()) + 1;
+                                jQuery("#rule_count").val(count);
+                            }
+                        });
+                    });
+                </script>
+            <?php }?>
+
+            <script>
+                jQuery(function(){
+                    jQuery("input[type = 'submit']").click(function(){
+                        all_rule_count = jQuery("#all_rule_count").val();
+                        rule_count = jQuery("#rule_count").val();
+
+
+                       if(all_rule_count != rule_count){
+                            alert("Please agree this rule!!");
+                            return false;
+                       }
+                       var upload_num = parseInt(jQuery("#upload_num").val());
+                        var $fileUpload = jQuery("input[type='file']");
+                        if (parseInt($fileUpload.get(0).files.length) > upload_num){
+                            alert("You are only allowed to upload a maximum of " +upload_num + " files");
+                            return false;
+                        }
+
+
+                    });
+                });
+            </script>
 <!--				  <div class="ask_row">-->
 <!--			<label> --><?php //_e( 'Tags' );?><!-- : </label>-->
 <!--		   <input name="post_tags" id="post_tags" type="text" class="textfield textfield_tags" value="--><?php //echo $post_tags;?><!--" />-->
@@ -291,8 +340,15 @@ if ( isset( $_REQUEST['qid'] ) && $_REQUEST['qid'] ) {
 			//if($current_user->ID!='')
 			{
 			?>
-		 <input name="submit" type="submit" id="submit" class="b_spacer3"  value="Submit" /> 
+		 <input name="submit" type="submit" id="submit" class="b_spacer3"  value="Submit" />
 			<?php }?>
+<!--01.29 saijiro            =====================================-->
+            <script>
+                // jQuery()
+            </script>
+
+
+
 		  </form>
 		 </div> <!-- content #end -->
 

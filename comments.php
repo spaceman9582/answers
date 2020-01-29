@@ -119,24 +119,28 @@ if ( post_password_required() ) { ?>
 				<?php /*?>. <a href="<?php echo get_option('siteurl'); ?>/?ptype=login&action=logout" title="Log out of this account"><?php _e('Logout &raquo;');?></a></p><?php */?>
 				<?php }
 
-
                 //===01.26 sajiro===================================================
-//                $cartsql = "select * from $wpdb->options where option_name like 'mysite_general_settings'";
-//
-//                $cartinfo = $wpdb->get_results( $cartsql );
-//                if ( $cartinfo ) {
+
                     $option_value = get_option( 'mysite_general_settings' );
-                    $answers_num = stripslashes( $option_value['answers_num'] );
-//                }
+                    $answers_num =  $option_value['answers_num'] ;
+                    $answers_title = stripslashes($option_value['answers_title'] );
+                    if($answers_title == '' || $answers_title == null){
+                        $answers_title = "Your Answers";
+                    }
+                    $answers_title1 =  $option_value['answers_title1'] ;
+                    $answers_title2 = $option_value['answers_title2'] ;
+
 
                 for($i=0; $i< $answers_num; $i++){
 
-
                     if($i==0){
-                        $title = "Your Answer";
+                        $title = $answers_title . ":";
                         $name = "comment";
-                    }else{
-                        $title = "Your Answer".$i;
+                    }else if($i==1){
+                        $title = $answers_title1 . ":";
+                        $name = "comment".$i;
+                    }else if($i==2){
+                        $title = $answers_title2 . ":";
                         $name = "comment".$i;
                     }
 

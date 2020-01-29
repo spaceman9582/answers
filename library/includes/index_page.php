@@ -6,7 +6,12 @@
 if ( isset( $_REQUEST['ptype'] ) && $_REQUEST['ptype'] == 'answers' ) {
 	include( TEMPLATEPATH . '/library/includes/index_answers.php' );
 
-} else {
+}else if(isset( $_REQUEST['ptype'] ) && $_REQUEST['ptype'] == 'answered'){
+    include( TEMPLATEPATH . '/library/includes/index_best_answered.php' );
+
+}else if(isset( $_REQUEST['ptype'] ) && $_REQUEST['ptype'] == 'usersss'){
+    include( TEMPLATEPATH . '/library/includes/user1.php' );
+}else {
 	include( TEMPLATEPATH . '/library/includes/index_questions.php' );
 }
 ?>

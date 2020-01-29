@@ -57,7 +57,32 @@ function custom_comment( $comment, $args, $depth ) {
 				<div class="content_left">
 
 									<?php
-                                    echo "<span style='display: flex;align-items: baseline;'>Your Answer:";
+
+                                    $option_value = get_option( 'mysite_general_settings' );
+                                    $answers_num =  $option_value['answers_num'] ;
+                                    $answers_title = stripslashes($option_value['answers_title'] );
+                                    if($answers_title == '' || $answers_title == null){
+                                        $answers_title = "Your Answers";
+                                    }
+                                    $answers_title1 =  $option_value['answers_title1'] ;
+                                    $answers_title2 = $option_value['answers_title2'] ;
+
+
+                                    for($i=0; $i< $answers_num; $i++) {
+
+                                        if ($i == 0) {
+                                            $title = $answers_title . ":";
+                                            $name = "comment";
+                                        } else if ($i == 1) {
+                                            $title1 = $answers_title1 . ":";
+                                            $name = "comment" . $i;
+                                        } else if ($i == 2) {
+                                            $title2 = $answers_title2 . ":";
+                                            $name = "comment" . $i;
+                                        }
+                                    }
+
+                                    echo "<span style='display: flex;align-items: baseline;'>$title:";
                                         comment_text();
                                         echo "</span>";
 
@@ -67,13 +92,13 @@ function custom_comment( $comment, $args, $depth ) {
                                         $comment_other2 = get_comment_meta(get_comment_ID(), 'comment2', true);
 
                                         if($comment_other1 != null){
-                                            echo "<span style='display: flex;align-items: baseline;'>Answer1:";
+                                            echo "<span style='display: flex;align-items: baseline;'>$title1:";
                                             echo "<p>$comment_other1</p>";
                                             echo "</span>";
                                         }
 
                                         if($comment_other2 != null){
-                                            echo "<span style='display: flex;align-items: baseline;'>Answer2:";
+                                            echo "<span style='display: flex;align-items: baseline;'>$title2:";
                                             echo "<p>$comment_other2</p>";
                                             echo "</span>";
                                         }

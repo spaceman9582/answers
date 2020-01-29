@@ -157,15 +157,13 @@ if ( $_POST ) {
 			   </p>
 			   </div> <!-- question #end -->
      <div class="image_group" style="margin-left: 120px">
- <!--      restore=====================================================================================================================================-->
-<!--         -->
-<!--         --><?php //foreach ($upload_arr_id as $key => $val){
-//             $img_title = get_post_meta( $val, '_wp_attached_file');
-//             ?>
-<!--             <img src="--><?php //echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?><!--"  height="120" width="120">-->
-<!--         --><?php //}?>
-<!--         -->
-<!--      restore=====================================================================================================================================-->
+
+         <?php foreach ($upload_arr_id as $key => $val){
+             $img_title = get_post_meta( $val, '_wp_attached_file');
+             ?>
+             <img src="<?php echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?>"  height="120" width="120">
+         <?php }?>
+
      </div>
 
 

@@ -1071,19 +1071,29 @@ function get_question_info_li( $post ) {
 <!--     01.27 saijiro================================================================-->
 
      <?php
+     $option_value = get_option( 'mysite_general_settings' );
+     $show_image_num = stripslashes( $option_value['show_image_num'] );
+     if($show_image_num == '') $show_image_num= 1;
         $img_title = '';
 //     var_dump(get_the_ID());
+     $i=0;
         $meta_arr = get_post_meta(get_the_ID(), '', true);
         foreach ($meta_arr as $key => $val){
 
+
             $img_title = get_post_meta( $val[0], '_wp_attached_file');
-            break;
+            if($i<$show_image_num){
+
+                ?>
+
+                <span class="image_avatar" style="float: left;margin-right: 20px;">
+                    <img src="<?php echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?>" alt="image" height="60" width="65" >
+                </span>
+     <?php }
+            $i++;
         }
-//        var_dump($img_title);
-     ?>
-     <span class="image_avatar" style="float: left;margin-right: 20px;">
-        <img src="<?php echo get_option( 'siteurl' ).'/wp-content/uploads/'.$img_title[0];?>" alt="image" height="60" width="65" >
-	</span>
+    ?>
+
 
 <!--     01.27 saijiro================================================================-->
 
